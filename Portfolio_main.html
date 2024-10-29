@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tammathorn Kananurak's Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!--CSS -->
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Tammathorn Kananurak</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpg" alt="Tammathorn Kananurak profile picture" />
+    </div>
+    <div class="section__text">
+      <h1 class="title">Tammathorn Kananurak</h1>
+      <p class="section__text__p2">Computer Engineering student at King Mongkut's University of Technology Thonburi</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Tammathorn Kananurak, a Computer Engineering student at KMUTT with a passion for software development, problem-solving, and creating innovative solutions. I enjoy working on projects that challenge my skills and push me to learn new things. In addition to my technical pursuits, I have a keen interest in economics, investment, and the stock market. I believe that understanding these fields enhances my problem-solving skills and allows me to create technology-driven solutions that can impact the financial sector. My goal is to contribute to impactful projects that make a difference in people's lives.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>King Mongkut's University of Technology Thonburi</strong><br>Bachelor of Engineering in Computer Engineering<br>Expected Graduation: 2024 - Present</li>
+      <li><strong>Prince of Songkla University</strong><br>Bachelor of Engineering in Artificial Intelligence Engineering<br>Attended Prince of Songkla University for 1 year before transferring <br> Study Period: 2023 - 2024 </li>
+      <li><strong>Satit Prince of Songkla University (High School)</strong><br>Graduation: 2022</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: C, Python</li>
+      <li>Web Development: HTML, CSS </li>
+      <li>Tools & Technologies: Git, Docker</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to connect or have any questions, feel free to reach out to me:</p>
+    <ul>
+      <li>Email: tammathorn.contact@gmail.com</li>
+      <li>Facebook: <a href="https://www.facebook.com/people/%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%98%E0%B8%A3-%E0%B8%84%E0%B8%93%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C/pfbid02MUzzkBP9DfmVCifAJ4zpEHKdLhWhkd6wVVVq2h1nBFQPAxGTFsCMYy6ZoEfBRw79l/" target="_blank">ธรรมธร คณานุรักษ์</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/tammathorn-kananurak-91142b307" target="_blank">linkedin.com/in/tammathorn-kananurak-91142b307</a></li>
+      <li>GitHub: <a href="https://github.com/tammathorn" target="_blank">github.com/tammathorn</a></li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
